@@ -10,7 +10,7 @@ spec:
   generators:
   - git:
       files:
-      - path: bootstrap/cluster-resources/*.json
+      - path: argo-autopilot/bootstrap/cluster-resources/*.json
       repoURL: https://github.com/tinagloege/infrastructure.git
       requeueAfterSeconds: 20
       revision: ""
@@ -38,7 +38,7 @@ spec:
         kind: Application
       project: default
       source:
-        path: bootstrap/cluster-resources/{{name}}
+        path: argo-autopilot/bootstrap/cluster-resources/{{name}}
         repoURL: https://github.com/tinagloege/infrastructure.git
       syncPolicy:
         automated:
