@@ -1,0 +1,2 @@
+export GIT_REPO=https://github.com/tinagloege/infrastructure/argo-autopilot
+argocd-autopilot repo bootstrap --recover --app ${GIT_REPO}/bootstrap/argo-cd
