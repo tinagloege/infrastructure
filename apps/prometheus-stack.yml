@@ -7,6 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://prometheus-community.github.io/helm-charts
+    targetRevision: 58.2.2
     chart: prometheus-stack
   destination:
     server: https://kubernetes.default.svc
